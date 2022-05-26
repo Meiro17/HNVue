@@ -15,6 +15,9 @@ import Submission from '@/components/Submission.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  base: '/',
+  fallback: true,
   routes: [
     {
       path: '/',
