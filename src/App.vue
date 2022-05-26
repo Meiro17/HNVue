@@ -6,11 +6,12 @@
 </template>
 
 <script>
-import NavigationBar from '@/components/NavigationBar'
+import navigationBarVue from './components/navigationBar.vue';
+
 export default {
   name: 'App',
   components: {
-    'nav': NavigationBar
+    'nav': navigationBarVue
   }
 }
 </script>
