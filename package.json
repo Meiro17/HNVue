@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -16,7 +17,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "^2.0.6",
     "axios": "^0.27.2",
+    "express": "^4.18.1",
     "node-sass": "^7.0.1",
+    "serve-static": "^1.15.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
